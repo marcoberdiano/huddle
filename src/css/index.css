@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.hero-container {
+  padding: 0em 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: -14em;
+  height: 100vh;
+}
+.hero-container .hero-left {
+  flex: 2;
+}
+.hero-container .hero-left .logo {
+  margin-bottom: 2em;
+}
+.hero-container .hero-left .illustration {
+  width: 100%;
+}
+.hero-container .hero-right {
+  flex: 2;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hero-container .hero-right .hero-heading .title {
+  font-family: "Poppins";
+  font-size: 3em;
+  margin: 0.5em 0em;
+}
+.hero-container .hero-right .hero-heading .subtitle {
+  font-family: "Open Sans";
+  font-size: 1.2em;
+}
+.hero-container .hero-right .hero-heading .btn {
+  border: none;
+  padding: 0.7em 3.7em;
+  margin-top: 2em;
+  border-radius: 30px;
+  background-color: #FFF;
+  color: hsl(257deg, 40%, 49%);
+  font-family: "Poppins";
+  font-size: 1em;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.479);
+  cursor: pointer;
+}
+.hero-container .hero-right .hero-heading .btn:hover {
+  background-color: hsl(300deg, 69%, 71%);
+  color: #FFF;
+}
+
+@media only screen and (max-width: 1025px) {
+  .hero-container {
+    height: auto;
+    margin-bottom: 1em;
+    flex-direction: column;
+  }
+  .hero-container .hero-right {
+    text-align: center;
+  }
+  .hero-container .hero-right .hero-heading .title {
+    font-size: 2em;
+  }
+  .hero-container .hero-right .hero-heading .subtitle {
+    font-size: 1em;
+  }
+}
+.social-container {
+  padding-top: 5em;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+  padding-right: 5em;
+  padding-bottom: 5em;
+}
+.social-container .social {
+  border: 1px solid #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 0.7em;
+  color: #FFF;
+}
+.social-container .social:hover {
+  border: 1px solid hsl(300deg, 69%, 71%);
+  color: hsl(300deg, 69%, 71%);
+}
+
+@media only screen and (max-width: 1025px) {
+  .social-container {
+    padding-right: 0em;
+    justify-content: center;
+  }
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/bg-desktop.svg");
+  background-color: hsl(257deg, 40%, 49%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 1025px) {
+  body {
+    background-image: url("../images/bg-mobile.svg");
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

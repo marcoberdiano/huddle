@@ -1,0 +1,14 @@
+@import './fonts';
+@import './colors';
+@import './hero';
+@import './footer';
+
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1025px) {
+}
